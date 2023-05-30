@@ -1,12 +1,14 @@
 // import "./App.css";
 import "./assets/css/start.css";
 import bakeryImg from "./assets/media/bakery.jpg";
+import ProductList from "./components/ProductList";
+import Home from "./components/Home";
 function App() {
   return (
     <>
-      <div className="container">
-        <img className="bakeryImg" src={bakeryImg} alt="bakery Img"></img>
-        <p>The Bakery</p>
+      <Home bakeryImg={bakeryImg} />
+      <div className="products-container">
+        <ProductList />
       </div>
     </>
   );
